@@ -13,7 +13,7 @@ Currently, it includes three main services:
 
 | Service | Description | Port | Eureka Registration |
 |----------|--------------|------|----------------------|
-| 🧠 **Eureka Server** | Service registry for microservice discovery | `8761` | — |
+| 🧠 **Eureka Server** | Service registry for microservice discovery | `8761` | ✅ |
 | 🌐 **API Gateway** | Routes all requests and verifies JWT | `9000` | ✅ |
 | 🔑 **User Service** | Handles signup, login, user management, and role-based authorization | `8081` | ✅ |
 
@@ -74,8 +74,8 @@ stas-microservices/
 
 | Method | Endpoint | Description | Auth Required |
 |---------|-----------|-------------|----------------|
-| `POST` | `/user-service/api/auth/signup` | Register a new user | ❌ |
-| `POST` | `/user-service/api/auth/login` | Login and receive JWT token | ❌ |
+| `POST` | `/user-service/api/auth/signup` | Register a new user | ✅ |
+| `POST` | `/user-service/api/auth/login` | Login and receive JWT token | ✅ |
 | `GET`  | `/user-service/api/users/all` | Get all users (Admin only) | ✅ |
 | `PUT`  | `/user-service/api/users/me` | Update user profile | ✅ |
 | `PUT`  | `/user-service/api/users/me/change-password` | Change user password | ✅ |
